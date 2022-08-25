@@ -1,0 +1,46 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 777px;
+    margin: 160px auto;
+    background-color: aqua;
+}
+
+.namlam {
+    width: 53%;
+}
+
+.bonlam {
+    width: 43%;
+}
+
+.trai {
+    float: left;
+}
+
+.phai {
+    float: right;
+}
+
+.oTren {
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 52px 38px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+.xoaDd {
+    clear: both;
+}
+
+.trai img {
+    height: 28px;
+}
+
+
+.oGiua {
+    margin: auto 16px;
+    font-weight: 100;
+    text-align: center;
+}
+

@@ -1,0 +1,740 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Danh sach san pham</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        function hamDocTin() {
+            var x = document.getElementById("tam");
+            x = document.getElementById("vungDl").innerHTML = x.innerHTML;
+        }
+    </script>
+    <style type="text/css">
+        h1 {
+            border: 1px solid #080;
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        img {
+            max-width: 100%
+        }
+
+        .ghcc {
+            max-height: 380px
+        }
+
+        #tam {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+            line-height: 1.15;
+            color: #111;
+            background-color: aqua;
+        }
+
+        #wrapper {
+            max-width: 1170px;
+            margin: 0 auto;
+        }
+
+        .headline {
+            text-align: center;
+            margin: 40px 0px;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: #bebebe;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            border: 3px solid #ff0000;
+            display: inline-block;
+            color: #555;
+            font-weight: 600;
+        }
+
+        ul.products {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+            ul.products li {
+                flex-basis: 16.667%;
+                padding-left: 15px;
+                padding-right: 15px;
+                box-sizing: border-box;
+                margin-bottom: 30px;
+            }
+
+                ul.products li img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                ul.products li .product-top {
+                    position: relative;
+                    overflow: hidden;
+                }
+
+                    ul.products li .product-top .product-thumb {
+                        display: block;
+                    }
+
+                ul.products li:hover .product-top .product-thumb img {
+                    filter: opacity(80%);
+                }
+
+                ul.products li .product-top .product-thumb img {
+                    display: block;
+                }
+
+                ul.products li .product-top a.buy-now {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    text-align: center;
+                    display: block;
+                    background-color: #446084;
+                    color: #fff;
+                    padding: 10px 0px;
+                    position: absolute;
+                    bottom: -36px;
+                    width: 100%;
+                    transition: 0.25s ease-in-out;
+                    opacity: 0.85;
+                }
+
+                ul.products li:hover a.buy-now {
+                    bottom: 0px;
+                }
+
+                ul.products li .product-info {
+                    padding: 10px 0px;
+                }
+
+                    ul.products li .product-info a {
+                        display: block;
+                        text-decoration: none;
+                    }
+
+                        ul.products li .product-info a.product-cat {
+                            font-size: 11px;
+                            text-transform: uppercase;
+                            color: #9e9e9e;
+                            padding: 3px 0px;
+                        }
+
+                        ul.products li .product-info a.product-name {
+                            color: #334867;
+                            padding: 3px 0px;
+                        }
+
+                    ul.products li .product-info .product-price {
+                        color: #111;
+                        padding: 2px 0px;
+                        font-weight: 600;
+                    }
+    </style>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Đồ án Thiết kế Web</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li><a href="main.html">Home</a></li>
+                <li class="active"><a href="champion.html">Tổng hợp tướng đtcl mùa 7</a></li>
+             
+
+            </ul>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <div class="headline">
+            <h2>Các nhân vật trong Teamfight tactic</h2>
+            
+        </div>
+
+        <ul class="products">
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a class="product-thumb">
+                            <img src="images/aoshin.png">
+                        </a>
+
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Lôi Long - Rồng Thần</a>
+                        <a href="" class="product-name">Ao Shin</a>
+                        <div class="product-price">10 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a class="product-thumb">
+                            <img src="images/aurelionsol.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Thượng Long - Thuật Sĩ - Rồng Thần</a>
+                        <a href="" class="product-name">Aurelion Sol</a>
+                        <div class="product-price">10 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a class="product-thumb">
+                            <img src="images/daeja.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Huyễn Long - Rồng Thần</a>
+                        <a href="" class="product-name">Daeja</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/idas.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Kim Long - Hộ Pháp - Rồng Thần</a>
+                        <a href="" class="product-name">Idas</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/shiohyu.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ngọc Long - Bí Ẩn - Rồng Thần</a>
+                        <a href="" class="product-name">Shi Oh Yu</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="Shyvana.html" class="product-thumb">
+                            <img src="images/shyvana.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Cuồng Long - Hóa Hình - Rồng Thần</a>
+                        <a href="" class="product-name">Shyvana</a>
+                        <div class="product-price">10 Vàng</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/syfen.png" alt="">
+                        </a>
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ám Long - Đấu Sĩ - Rồng Thần</a>
+                        <a href="" class="product-name">Sy'fen</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/aatrox.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Chiến Binh - Kim Long</a>
+                        <a href="" class="product-name">Aatrox</a>
+                        <div class="product-price">1 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/anivia.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Thuật Sĩ - Ngọc Long - Thần Thoại</a>
+                        <a href="" class="product-name">Anivia</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/ashe.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Chiến Binh Rồng - Xạ Tiễn
+                            -    Ngọc Long
+                        </a>
+                        <a href="" class="product-name">Sy'fen</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/bard.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">
+                            Bí Ẩn - Bard
+                            - Bang Hội
+                        </a>
+                        <a href="" class="product-name">Bard</a>
+                        <div class="product-price">5 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/braum.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Hộ Pháp - Đồ Long</a>
+                        <a href="" class="product-name">Braum</a>
+                        <div class="product-price">2 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/corki.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Pháo Thủ - Lễ Hội</a>
+                        <a href="" class="product-name">Corki</a>
+                        <div class="product-price">4 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/diana.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Sát Thủ - Đồ Long</a>
+                        <a href="" class="product-name">Diana</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/elise.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ám Long - Hóa Hình</a>
+                        <a href="" class="product-name">Elise</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/ezreal.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Xạ Tiễn - Lôi Long</a>
+                        <a href="" class="product-name">Ezreal</a>
+                        <div class="product-price">1 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/gnar.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Hóa Hình - Ngọc Long</a>
+                        <a href="" class="product-name">Gnar</a>
+                        <div class="product-price">2 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/hecarim.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat"> Đấu Sĩ - Thượng Long</a>
+                        <a href="" class="product-name">illaoi</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/illaoi.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Lễ hội - Pháo Thủ</a>
+                        <a href="" class="product-name">Jinx</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/jinx.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ngọc Long - Chiến Binh Rồng</a>
+                        <a href="" class="product-name">Karma</a>
+                        <div class="product-price">1 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/karma.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Sát thủ - Cuồng Long</a>
+                        <a href="" class="product-name">Kayn</a>
+                        <div class="product-price">2 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/kayn.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Lôi Long - Chiến BInh Rồng</a>
+                        <a href="" class="product-name">LeeSin</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/leesin.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Huyễn Long - Hộ pháp</a>
+                        <a href="" class="product-name">Leona</a>
+                        <div class="product-price">1 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/leona.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Cuồng Long - Xạ Tiễn</a>
+                        <a href="" class="product-name">Xayah</a>
+                        <div class="product-price">4 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/xayah.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Thuật sĩ - Luyện Rồng</a>
+                        <a href="" class="product-name">Lulu</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/lulu.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Thượng Long - Pháp Sư</a>
+                        <a href="" class="product-name">Nami</a>
+                        <div class="product-price">2 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/nami.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ngọc Long - Hóa Hình</a>
+                        <a href="" class="product-name">Neeko</a>
+                        <div class="product-price">4 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/neeko.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">thượng Long - Hóa hình</a>
+                        <a href="" class="product-name">Nidalee</a>
+                        <div class="product-price">1 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/nidalee.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Huyễn Long - Kị sĩ</a>
+                        <a href="" class="product-name">Nunu</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/nunu.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Đồ Long - CHiến Binh</a>
+                        <a href="" class="product-name">Olaf</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/olaf.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Chiến Binh Rồng - Chiến Binh</a>
+                        <a href="" class="product-name">Yasou</a>
+                        <div class="product-price">5 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/yasuo.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Chiến Binh - Huyễn Long</a>
+                        <a href="" class="product-name">Yone</a>
+                        <div class="product-price">2 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/yone.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Kim Long - Pháp Sư</a>
+                        <a href="" class="product-name">Zoe</a>
+                        <div class="product-price">5 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/zoe.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Thượng Long - xạ Tiễn</a>
+                        <a href="" class="product-name">Varus</a>
+                        <div class="product-price">3 Vàng</div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/varus.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Hiệp Hội - Sát Thủ</a>
+                        <a href="" class="product-name">Talon</a>
+                        <div class="product-price">4 Vàng</div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <div class="product-item">
+                    <div class="product-top">
+                        <a href="" class="product-thumb">
+                            <img src="images/talon.png" alt="">
+                        </a>
+
+                    </div>
+                    <div class="product-info">
+                        <a href="" class="product-cat">Ám Long - Đấu Sĩ - Rồng Thần</a>
+                        <a href="" class="product-name">Sy'fen</a>
+                        <div class="product-price">8 Vàng</div>
+                    </div>
+                </div>
+            </li>
+
+
+        </ul>
+
+    </div>
+
+
+
+</body>
+</html>
